@@ -306,7 +306,7 @@ def main() -> None:
     logger.info("Total labeled client turns: %d across %d patients",
                 len(all_turn_rows), len(all_results))
 
-    # No BLRI restriction here; that enters in Analysis 3.
+    # No restriction to participants with questionnaire data.
     all_turn_rows, all_results = apply_inclusion_filter(
         all_turn_rows, all_results, logger, min_bucket_turns=args.min_bucket_turns,
     )

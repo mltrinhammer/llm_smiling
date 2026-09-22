@@ -2,7 +2,7 @@
 
 Code for the manuscript *Using Large Language Models to Contextualize Smiling in Psychotherapy Research* (Trinhammer, Grasshof, Volkert, Rasche, Weiland, Brandt, & Altmann), currently being prepared for submission.
 
-The pipeline annotates the sentiment of each participant speech turn in an attachment interview with an open-weight LLM, and analyzes individual and simultaneous Duchenne smiling (OpenFace AU06 + AU12) as a function of that sentiment. Everything runs locally on a single consumer GPU.
+The pipeline annotates the sentiment of each participant speech turn in an attachment interview with an open-weight LLM, and analyzes individual smiling, simultaneous smiling, and cross-lagged smile synchrony (OpenFace AU06 + AU12) as a function of that sentiment. Everything runs locally on a single consumer GPU.
 
 ## Contents
 
@@ -14,8 +14,8 @@ The pipeline annotates the sentiment of each participant speech turn in an attac
 `analyses/`
 - `common.py` — smile signal construction and per-turn measures shared by all analyses
 - `analysis1.py` — individual smiling (frequency and intensity) by sentiment; LMM with within-participant permutation LRT
-- `analysis2.py` / `analysis2_stats.py` — per-turn dyadic synchrony measures, then GLMM of simultaneous smiling by sentiment
-- `analysis3.py` — BLRI-mini (perceived facilitativeness) predicted from facial synchrony
+- `analysis2.py` / `analysis2_stats.py` — per-turn dyadic synchrony measures, then GLMM of simultaneous smiling by sentiment (Analysis 2a) and LMM of cross-lagged smile-intensity synchrony by sentiment (Analysis 2b)
+
 
 ## Data
 
