@@ -1,6 +1,6 @@
 # Using Large Language Models to Contextualize Smiling in Psychotherapy Research
 
-Code for the manuscript *Using Large Language Models to Contextualize Smiling in Psychotherapy Research* (Trinhammer, Grasshof, Volkert, Rasche, Weiland, Brandt, & Altmann), currently being prepared for submission.
+Code for the manuscript *Using Large Language Models to Contextualize Smiling in Psychotherapy Research* (Trinhammer, Grasshof, Volkert, Rasche, Weiland, Brandt, & Altmann).
 
 The pipeline annotates the sentiment of each participant speech turn in an attachment interview with an open-weight LLM, and analyzes individual smiling, simultaneous smiling, and cross-lagged smile synchrony (OpenFace AU06 + AU12) as a function of that sentiment. Everything runs locally on a single consumer GPU.
 
